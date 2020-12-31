@@ -23,7 +23,7 @@ summary(linearRead)
 linearWrite <- lm(writing.score ~ reading.score + math.score, dataset)
 summary(linearWrite)
 
-# Soal Prediksi
+# Soal Prediksi 
 dataFindMath <- data.frame(
   writing.score = 76,
   reading.score = 69
@@ -37,7 +37,18 @@ dataFindWrite <- data.frame(
   reading.score = 70
 )
 
-#Prediksi Nilai 
+#Prediksi Nilai (Hasil Data Mining)
 predict(linearMath, dataFindMath)
 predict(linearRead, dataFindRead)
 predict(linearWrite, dataFindWrite)
+
+install.packages("corrplot")
+library("corrplot")
+
+matrix <- data.frame(
+  math = dataset$math.score,
+  writing = dataset$writing.score,
+  reading = dataset$reading.score
+)
+M <- cor(matrix)
+corrplot::corrplot(M, method="number", type="lower", diag = FALSE, tl.srt = 43)
