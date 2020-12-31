@@ -8,3 +8,7 @@ Kelompok:
 File: Students Performance Exams
 
 Model: Linear Regression
+
+```R
+ dataset <- read.csv("StudentsPerformance.csv" , sep = ",")
+```
