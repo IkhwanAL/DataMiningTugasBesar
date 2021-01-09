@@ -54,4 +54,4 @@ Lalu Dari Data Diatas Kami Melakukan Predict Pada Tiap Pelajaran
  predict(linearWrite, dataFindWrite)
 ```
 
-![Gambar Korelasi] (https://github.com/IkhwanAL/DataMiningTugasBesar/blob/main/src/corr.jpg?raw=true)
+![Gambar Korelasi](https://raw.githubusercontent.com/IkhwanAL/DataMiningTugasBesar/main/src/corr.jpg)
