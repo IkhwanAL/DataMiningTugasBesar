@@ -31,3 +31,19 @@ dalam penentuan Model Regression Kami membuat 3 model perhitungan
  linearRead <- lm(reading.score ~ math.score + writing.score, dataset)
  linearWrite <- lm(writing.score ~ reading.score + math.score, dataset)
 ```
+
+Lalu Mencoba Test Linear Model Yang Telah dibuay Dengan Data Dummy
+```R
+ dataFindMath <- data.frame(
+  writing.score = 76,
+  reading.score = 69
+)
+dataFindRead <- data.frame(
+  math.score = 88,
+  writing.score = 84
+)
+dataFindWrite <- data.frame(
+  math.score = 88,
+  reading.score = 70
+)
+```
