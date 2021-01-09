@@ -53,5 +53,8 @@ Lalu Dari Data Diatas Kami Melakukan Predict Pada Tiap Pelajaran
  predict(linearRead, dataFindRead)
  predict(linearWrite, dataFindWrite)
 ```
-
+Hasil Korelasi Menggunakan Library corrplot
+```R
+corrplot::corrplot(M, method="number", type="lower", diag = FALSE, tl.srt = 43)
+```
 ![Gambar Korelasi](https://raw.githubusercontent.com/IkhwanAL/DataMiningTugasBesar/main/src/corr.jpg)
