@@ -34,7 +34,7 @@ dalam penentuan Model Regression Kami membuat 3 model perhitungan
 
 Lalu Mencoba Test Linear Model Yang Telah dibuay Dengan Data Dummy
 ```R
- dataFindMath <- data.frame(
+dataFindMath <- data.frame(
   writing.score = 76,
   reading.score = 69
 )
@@ -47,3 +47,11 @@ dataFindWrite <- data.frame(
   reading.score = 70
 )
 ```
+Lalu Dari Data Diatas Kami Melakukan Predict Pada Tiap Pelajaran
+```R
+ predict(linearMath, dataFindMath)
+ predict(linearRead, dataFindRead)
+ predict(linearWrite, dataFindWrite)
+```
+
+![Gambar Korelasi] (https://github.com/IkhwanAL/DataMiningTugasBesar/blob/main/src/corr.jpg)
