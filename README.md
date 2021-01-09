@@ -54,6 +54,7 @@ Lalu Dari Data Diatas Kami Melakukan Predict Pada Tiap Pelajaran
  predict(linearWrite, dataFindWrite)
 ```
 Hasil Predict Pada Nilai Dummy
+
 ![Hasil Predict](https://github.com/IkhwanAL/DataMiningTugasBesar/blob/main/src/predict.jpg?raw=true)
 
 Hasil Korelasi Menggunakan Library corrplot
